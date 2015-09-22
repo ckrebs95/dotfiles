@@ -1,0 +1,15 @@
+[user]
+	name = Chris Krebs
+	email = c.krebs@ritascorp.com
+[alias]
+        st = status
+         l = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(black)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+        lO = "log --graph --date=short --pretty=format:'%Cred%h%Creset %ad -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+        lr = "log --graph --date=short --pretty=format:'%Cred%h%Creset %ad %s' --abbrev-commit"
+        co = checkout
+        sync = "!f() { echo Syncing with origin && git fetch origin && git rebase origin/master; }; f"
+        msync = "!f() { echo Syncing with db-menuboard && git fetch origin && git rebase origin/db-menuboard; }; f"
+[color]
+        ui = true
+[branch]
+        autosetuprebase = always
